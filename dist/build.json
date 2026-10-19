@@ -1,0 +1,178 @@
+{
+  "encoder": {
+    "dockerfileSha256": "e90f4257c7f1292d44f84128def8fe56fc30ccdab3ce0ec1cc3ddf9824ed1a69",
+    "ffmpeg": "ffmpeg version 5.1.9-0+deb12u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "image": "coolms-sound-encoder:bookworm-ffmpeg-5.1.9",
+    "imageId": "sha256:91f70eb85857f298836eeabe56781f5436cdfde23e4b03ac788a1bfeb1b6b91a"
+  },
+  "files": {
+    "android/raw/bell.ogg": {
+      "codec": "vorbis",
+      "durationMs": 1000,
+      "fromSource": "07e4cb1c551ebaf8cd5b52f77905e636eaaff14f02ac92b24a19d1c4497162d3",
+      "kind": "bell",
+      "sha256": "2c75d3693bbdfc9acd334b72b68f10644fc1df88ef316cc3ea7c76655ffe2b1a"
+    },
+    "android/raw/mail.ogg": {
+      "codec": "vorbis",
+      "durationMs": 360,
+      "fromSource": "256eb587d4c72771faf571d7a5577f5e46b90171c482c381eff9a7b9e5ed33cd",
+      "kind": "mail",
+      "sha256": "9074872525e0505c5629b6b6dd674caafdbfdb283312bc7318de555d8c855440"
+    },
+    "android/raw/message.ogg": {
+      "codec": "vorbis",
+      "durationMs": 230,
+      "fromSource": "1492ce7db1e6cdb97ccc427c82fdc7b5f9d622f152d3cf2f9bbb9e569dd8793b",
+      "kind": "message",
+      "sha256": "45e3c766f5088be691ab93f7861b51ccee0a33ee59433f649560d3a4fc454fbc"
+    },
+    "android/raw/ring.ogg": {
+      "codec": "vorbis",
+      "durationMs": 2000,
+      "fromSource": "3f6624d99294a810cf0616ce67fccfeee9d16469d47169e83c0f99abb9f83a91",
+      "kind": "ring",
+      "sha256": "7c7c89c5d37c87c8770ebeef2bbe86bdeec85e50eb6db3226d348c93cc93b34d"
+    },
+    "android/raw/task.ogg": {
+      "codec": "vorbis",
+      "durationMs": 500,
+      "fromSource": "895d12c44f7b7a42ba88f93acc978b96f26dc82b54802c44a6efb867f418953e",
+      "kind": "task",
+      "sha256": "b479891408febaac7f029d5b7fa1bb110eb8d1f5addab35d3100a7acfd112638"
+    },
+    "android/raw/visitor.ogg": {
+      "codec": "vorbis",
+      "durationMs": 540,
+      "fromSource": "705e1fdd001ddd3456f78ea27332bcb4c2aa245af3434257ac19c6a1139d69e1",
+      "kind": "visitor",
+      "sha256": "3630c80759ec87cb1c4b2b70adcc4569994fa4df5979260a617ac2c754a5dbaf"
+    },
+    "ios/bell.caf": {
+      "codec": "adpcm_ima_qt",
+      "durationMs": 1000,
+      "fromSource": "07e4cb1c551ebaf8cd5b52f77905e636eaaff14f02ac92b24a19d1c4497162d3",
+      "kind": "bell",
+      "sha256": "b0ab496eecc02e7d8eb91f4026a1bc82553018036bf07fb3fc124dfd28a50530"
+    },
+    "ios/mail.caf": {
+      "codec": "adpcm_ima_qt",
+      "durationMs": 360,
+      "fromSource": "256eb587d4c72771faf571d7a5577f5e46b90171c482c381eff9a7b9e5ed33cd",
+      "kind": "mail",
+      "sha256": "bbeecff83b26d686244f98e7f85996b7c82cd6003b6384b9a91ec3d7125baf50"
+    },
+    "ios/message.caf": {
+      "codec": "adpcm_ima_qt",
+      "durationMs": 231,
+      "fromSource": "1492ce7db1e6cdb97ccc427c82fdc7b5f9d622f152d3cf2f9bbb9e569dd8793b",
+      "kind": "message",
+      "sha256": "ad82cd359ae4fd71a390fe1e256c9cecbdec2f05de31d4078bbdf84f9db7a421"
+    },
+    "ios/ring.caf": {
+      "codec": "adpcm_ima_qt",
+      "durationMs": 20000,
+      "fromSource": "3f6624d99294a810cf0616ce67fccfeee9d16469d47169e83c0f99abb9f83a91",
+      "kind": "ring",
+      "sha256": "40746d43b4b0fbc27a55b61a02bc0c607498d61569fb9b5d7cce337be5fb6eb2"
+    },
+    "ios/task.caf": {
+      "codec": "adpcm_ima_qt",
+      "durationMs": 500,
+      "fromSource": "895d12c44f7b7a42ba88f93acc978b96f26dc82b54802c44a6efb867f418953e",
+      "kind": "task",
+      "sha256": "5ff34f84e8cec891ceccd0eafbb9b413eb71668597847a8e4e5dd8c61039bd25"
+    },
+    "ios/visitor.caf": {
+      "codec": "adpcm_ima_qt",
+      "durationMs": 540,
+      "fromSource": "705e1fdd001ddd3456f78ea27332bcb4c2aa245af3434257ac19c6a1139d69e1",
+      "kind": "visitor",
+      "sha256": "a8e053f3d1ca2afb29a02c8f1c732991d7e7637f7aeadb72c3d8148b470cbc87"
+    },
+    "web/bell.m4a": {
+      "codec": "aac",
+      "durationMs": 1000,
+      "fromSource": "07e4cb1c551ebaf8cd5b52f77905e636eaaff14f02ac92b24a19d1c4497162d3",
+      "kind": "bell",
+      "sha256": "1550d5f928f244133bccd5372705ee21abcba75ab7d210d121eb42143955c519"
+    },
+    "web/bell.ogg": {
+      "codec": "opus",
+      "durationMs": 1006,
+      "fromSource": "07e4cb1c551ebaf8cd5b52f77905e636eaaff14f02ac92b24a19d1c4497162d3",
+      "kind": "bell",
+      "sha256": "6852b4312104aa010f20245b0b17186cf48c3786390f79c4332d8bb2ad9d435e"
+    },
+    "web/mail.m4a": {
+      "codec": "aac",
+      "durationMs": 360,
+      "fromSource": "256eb587d4c72771faf571d7a5577f5e46b90171c482c381eff9a7b9e5ed33cd",
+      "kind": "mail",
+      "sha256": "44c5d66a68e5380b784641dd012620677eed0943c7f9169dc7053bf4e06e2c55"
+    },
+    "web/mail.ogg": {
+      "codec": "opus",
+      "durationMs": 366,
+      "fromSource": "256eb587d4c72771faf571d7a5577f5e46b90171c482c381eff9a7b9e5ed33cd",
+      "kind": "mail",
+      "sha256": "8db13cfcfe56afe5b775e11e4dc42ca521d3b3bc71c33d9c5690181eb6d31680"
+    },
+    "web/message.m4a": {
+      "codec": "aac",
+      "durationMs": 230,
+      "fromSource": "1492ce7db1e6cdb97ccc427c82fdc7b5f9d622f152d3cf2f9bbb9e569dd8793b",
+      "kind": "message",
+      "sha256": "3b31cedb8407f7e38e77008a95d35b1a4fbd3ff2af02999b67ad68be4d1545a1"
+    },
+    "web/message.ogg": {
+      "codec": "opus",
+      "durationMs": 236,
+      "fromSource": "1492ce7db1e6cdb97ccc427c82fdc7b5f9d622f152d3cf2f9bbb9e569dd8793b",
+      "kind": "message",
+      "sha256": "544da2e7636b64449ff69231f7a315c13b75d868df83a69dc674dd9ecb653051"
+    },
+    "web/ring.m4a": {
+      "codec": "aac",
+      "durationMs": 2000,
+      "fromSource": "3f6624d99294a810cf0616ce67fccfeee9d16469d47169e83c0f99abb9f83a91",
+      "kind": "ring",
+      "sha256": "487eff26e4a4db9e976119bb1980b736717f4aa25f2d525f25896b293da38caa"
+    },
+    "web/ring.ogg": {
+      "codec": "opus",
+      "durationMs": 2006,
+      "fromSource": "3f6624d99294a810cf0616ce67fccfeee9d16469d47169e83c0f99abb9f83a91",
+      "kind": "ring",
+      "sha256": "a0b096ca880a510b06915800d3b3d8ef38651e9fde48b1c9d97422a3ece57eaa"
+    },
+    "web/task.m4a": {
+      "codec": "aac",
+      "durationMs": 500,
+      "fromSource": "895d12c44f7b7a42ba88f93acc978b96f26dc82b54802c44a6efb867f418953e",
+      "kind": "task",
+      "sha256": "981320ec15413f77ab78b8c35aa84f8176b1d3ee96f7d8d7b4d0b336132d4c6e"
+    },
+    "web/task.ogg": {
+      "codec": "opus",
+      "durationMs": 506,
+      "fromSource": "895d12c44f7b7a42ba88f93acc978b96f26dc82b54802c44a6efb867f418953e",
+      "kind": "task",
+      "sha256": "6c3ff8113f849734d6712339ead64ace4f109ea571de71647757e96af5e9c369"
+    },
+    "web/visitor.m4a": {
+      "codec": "aac",
+      "durationMs": 540,
+      "fromSource": "705e1fdd001ddd3456f78ea27332bcb4c2aa245af3434257ac19c6a1139d69e1",
+      "kind": "visitor",
+      "sha256": "aa7801586462ee519c322a617126fb1e51026543c5216dd2662546a5aa00f65f"
+    },
+    "web/visitor.ogg": {
+      "codec": "opus",
+      "durationMs": 546,
+      "fromSource": "705e1fdd001ddd3456f78ea27332bcb4c2aa245af3434257ac19c6a1139d69e1",
+      "kind": "visitor",
+      "sha256": "d7e1ee210cc6af726b7ad682b12f8e14879cf5bd662d703e081bbba89070f71f"
+    }
+  }
+}
