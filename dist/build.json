@@ -49,46 +49,46 @@
       "sha256": "3630c80759ec87cb1c4b2b70adcc4569994fa4df5979260a617ac2c754a5dbaf"
     },
     "ios/bell.caf": {
-      "codec": "pcm_s16le",
+      "codec": "adpcm_ima_qt",
       "durationMs": 1000,
       "fromSource": "07e4cb1c551ebaf8cd5b52f77905e636eaaff14f02ac92b24a19d1c4497162d3",
       "kind": "bell",
-      "sha256": "3b02900918b3ca27030f5103ea12c6c3b33d50e80dd2b062fd37aa33adc9850e"
+      "sha256": "b0ab496eecc02e7d8eb91f4026a1bc82553018036bf07fb3fc124dfd28a50530"
     },
     "ios/mail.caf": {
-      "codec": "pcm_s16le",
+      "codec": "adpcm_ima_qt",
       "durationMs": 360,
       "fromSource": "256eb587d4c72771faf571d7a5577f5e46b90171c482c381eff9a7b9e5ed33cd",
       "kind": "mail",
-      "sha256": "f1c8d7c6a951e8b5143fd4de3e299e3a01591e3e6671200be66080b575a97cbf"
+      "sha256": "bbeecff83b26d686244f98e7f85996b7c82cd6003b6384b9a91ec3d7125baf50"
     },
     "ios/message.caf": {
-      "codec": "pcm_s16le",
-      "durationMs": 230,
+      "codec": "adpcm_ima_qt",
+      "durationMs": 231,
       "fromSource": "1492ce7db1e6cdb97ccc427c82fdc7b5f9d622f152d3cf2f9bbb9e569dd8793b",
       "kind": "message",
-      "sha256": "3611e71d8b87465033474616338fe0c8302333fe54003939e0ae1d925d12d9be"
+      "sha256": "ad82cd359ae4fd71a390fe1e256c9cecbdec2f05de31d4078bbdf84f9db7a421"
     },
     "ios/ring.caf": {
-      "codec": "pcm_s16le",
+      "codec": "adpcm_ima_qt",
       "durationMs": 20000,
       "fromSource": "3f6624d99294a810cf0616ce67fccfeee9d16469d47169e83c0f99abb9f83a91",
       "kind": "ring",
-      "sha256": "d4c85b4b906dd4bd5d6087be6430a942269aacc182bf9ced1d22b8032e37d281"
+      "sha256": "40746d43b4b0fbc27a55b61a02bc0c607498d61569fb9b5d7cce337be5fb6eb2"
     },
     "ios/task.caf": {
-      "codec": "pcm_s16le",
+      "codec": "adpcm_ima_qt",
       "durationMs": 500,
       "fromSource": "895d12c44f7b7a42ba88f93acc978b96f26dc82b54802c44a6efb867f418953e",
       "kind": "task",
-      "sha256": "854d573f4ba41eff005afea6b516eb991b676c59c2c9e2cf925205e2966856b6"
+      "sha256": "5ff34f84e8cec891ceccd0eafbb9b413eb71668597847a8e4e5dd8c61039bd25"
     },
     "ios/visitor.caf": {
-      "codec": "pcm_s16le",
+      "codec": "adpcm_ima_qt",
       "durationMs": 540,
       "fromSource": "705e1fdd001ddd3456f78ea27332bcb4c2aa245af3434257ac19c6a1139d69e1",
       "kind": "visitor",
-      "sha256": "808aaf66f98d1c9084ba0845313f2904820dc3f7c48416f70a723ffcd000db20"
+      "sha256": "a8e053f3d1ca2afb29a02c8f1c732991d7e7637f7aeadb72c3d8148b470cbc87"
     },
     "web/bell.m4a": {
       "codec": "aac",

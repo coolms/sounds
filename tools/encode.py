@@ -6,7 +6,7 @@
 - dist/web/<kind>.ogg      Opus, 64 kb/s   (browsers)
 - dist/web/<kind>.m4a      AAC, 96 kb/s    (Safari before Opus)
 - dist/android/raw/<kind>.ogg  Vorbis      (res/raw; a notification channel's sound)
-- dist/ios/<kind>.caf      linear PCM      (the app bundle; under 30 s, so the ring is its loop repeated to 20 s)
+- dist/ios/<kind>.caf      IMA4            (the app bundle; under 30 s, so the ring is its loop repeated to 20 s)
 
 The encoder is tools/encoder/Dockerfile, built here when missing and run with no network as the calling user.
 """
@@ -27,7 +27,7 @@ TARGETS = [
     ('web/{k}.ogg', ['-c:a', 'libopus', '-b:a', '64k'], 'opus'),
     ('web/{k}.m4a', ['-c:a', 'aac', '-b:a', '96k', '-movflags', '+faststart'], 'aac'),
     ('android/raw/{k}.ogg', ['-c:a', 'libvorbis', '-q:a', '5'], 'vorbis'),
-    ('ios/{k}.caf', ['-c:a', 'pcm_s16le', '-f', 'caf'], 'pcm_s16le'),
+    ('ios/{k}.caf', ['-c:a', 'adpcm_ima_qt', '-f', 'caf'], 'adpcm_ima_qt'),
 ]
 
 

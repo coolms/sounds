@@ -23,7 +23,7 @@ registry, in a client's settings and mutes, and in an Android app's notification
 | `sounds.json` | One entry per kind: its versions, its source and the source's sha256, its length, whether it loops, and its origin, licence and author. |
 | `dist/web/<kind>.ogg`, `dist/web/<kind>.m4a` | For browsers: Opus, and AAC for browsers that do not play Opus. |
 | `dist/android/raw/<kind>.ogg` | For an Android app's `res/raw`: Vorbis. |
-| `dist/ios/<kind>.caf` | For an iOS app's bundle: linear PCM. Each file is under 30 seconds, as iOS requires. iOS cannot loop a notification sound, so the ring is its loop repeated to 20 seconds. |
+| `dist/ios/<kind>.caf` | For an iOS app's bundle: IMA4 (IMA ADPCM), which iOS plays as a notification sound, at about a quarter of linear PCM's size. Each file is under 30 seconds, as iOS requires. iOS cannot loop a notification sound, so the ring is its loop repeated to 20 seconds. |
 | `dist/build.json` | What was built: each file's sha256, codec and length, the source it was built from, and the encoder. |
 | `tools/synth.py` | Makes the sources, each from a recipe in the file. Python standard library only. |
 | `tools/encode.py` | Encodes the sources into `dist/` with the encoder image. |
