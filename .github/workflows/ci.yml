@@ -9,6 +9,33 @@ permissions:
   contents: read
 
 jobs:
+  sounds:
+    name: Sounds
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # The manifest, the sources and the built files; and each kind's sound and build against the version this
+      # merges into (a pull request's base, a push's previous commit, or none for the first push).
+      - name: The sounds, their files and their versions
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE_REF: ${{ github.base_ref }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "$EVENT" = pull_request ]; then
+            against="origin/$BASE_REF"
+          elif [ -z "$BEFORE" ] || [ "$BEFORE" = 0000000000000000000000000000000000000000 ]; then
+            against=none
+          else
+            against="$BEFORE"
+          fi
+          python3 tools/check.py --against "$against"
+
   no-dependencies:
     name: No dependencies
     runs-on: ubuntu-latest

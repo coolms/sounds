@@ -1,0 +1,83 @@
+{
+  "$comment": "One entry per kind. sound: a new sound (an Android channel is the kind plus this); build: a re-encode, format or trim of the same sound. tools/check.py holds the rules.",
+  "sounds": {
+    "ring": {
+      "sound": 1,
+      "build": 1,
+      "description": "A call ringing: two soft chords, twice, then a rest; the loop unit",
+      "source": "sources/ring.wav",
+      "sha256": "3f6624d99294a810cf0616ce67fccfeee9d16469d47169e83c0f99abb9f83a91",
+      "durationMs": 2000,
+      "loop": true,
+      "origin": "original",
+      "licence": "MIT",
+      "author": "CoolMS",
+      "recipe": "tools/synth.py: ring()"
+    },
+    "message": {
+      "sound": 1,
+      "build": 1,
+      "description": "A direct message or a mention: a short rising two-note pop",
+      "source": "sources/message.wav",
+      "sha256": "1492ce7db1e6cdb97ccc427c82fdc7b5f9d622f152d3cf2f9bbb9e569dd8793b",
+      "durationMs": 230,
+      "loop": false,
+      "origin": "original",
+      "licence": "MIT",
+      "author": "CoolMS",
+      "recipe": "tools/synth.py: message()"
+    },
+    "visitor": {
+      "sound": 1,
+      "build": 1,
+      "description": "A website visitor waiting: three ascending notes",
+      "source": "sources/visitor.wav",
+      "sha256": "705e1fdd001ddd3456f78ea27332bcb4c2aa245af3434257ac19c6a1139d69e1",
+      "durationMs": 540,
+      "loop": false,
+      "origin": "original",
+      "licence": "MIT",
+      "author": "CoolMS",
+      "recipe": "tools/synth.py: visitor()"
+    },
+    "task": {
+      "sound": 1,
+      "build": 1,
+      "description": "A task assigned: one warm ding",
+      "source": "sources/task.wav",
+      "sha256": "895d12c44f7b7a42ba88f93acc978b96f26dc82b54802c44a6efb867f418953e",
+      "durationMs": 500,
+      "loop": false,
+      "origin": "original",
+      "licence": "MIT",
+      "author": "CoolMS",
+      "recipe": "tools/synth.py: task()"
+    },
+    "mail": {
+      "sound": 1,
+      "build": 1,
+      "description": "Mail arriving: a soft falling two-note figure, the quietest",
+      "source": "sources/mail.wav",
+      "sha256": "256eb587d4c72771faf571d7a5577f5e46b90171c482c381eff9a7b9e5ed33cd",
+      "durationMs": 360,
+      "loop": false,
+      "origin": "original",
+      "licence": "MIT",
+      "author": "CoolMS",
+      "recipe": "tools/synth.py: mail()"
+    },
+    "bell": {
+      "sound": 1,
+      "build": 1,
+      "description": "A notification: a struck bell",
+      "source": "sources/bell.wav",
+      "sha256": "07e4cb1c551ebaf8cd5b52f77905e636eaaff14f02ac92b24a19d1c4497162d3",
+      "durationMs": 1000,
+      "loop": false,
+      "origin": "original",
+      "licence": "MIT",
+      "author": "CoolMS",
+      "recipe": "tools/synth.py: bell()"
+    }
+  }
+}
