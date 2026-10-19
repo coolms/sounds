@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [develop, main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  no-dependencies:
+    name: No dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: package.json declares no dependencies
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          p = json.load(open('package.json', encoding='utf-8'))
+          kinds = ['dependencies', 'devDependencies', 'peerDependencies', 'optionalDependencies']
+          found = [k for k in kinds if p.get(k)]
+          if found:
+              print('FOUND -- package.json declares ' + ', '.join(found)); sys.exit(1)
+          print('CLEAR -- 0 of %d dependency kinds declared' % len(kinds))
+          PY
+      - name: The tools import the Python standard library only
+        run: |
+          python3 - <<'PY'
+          import ast, glob, sys
+          outside = []
+          files = sorted(glob.glob('tools/*.py'))
+          for f in files:
+              for node in ast.walk(ast.parse(open(f, encoding='utf-8').read())):
+                  names = [a.name for a in node.names] if isinstance(node, ast.Import) else (
+                      [node.module] if isinstance(node, ast.ImportFrom) and node.module else [])
+                  outside += ['%s: %s' % (f, n) for n in names if n.split('.')[0] not in sys.stdlib_module_names]
+          if outside:
+              print('FOUND -- outside the standard library: ' + ', '.join(outside)); sys.exit(1)
+          print('CLEAR -- %d of %d tools import the standard library only' % (len(files), len(files)))
+          PY
+
+  # README, a LICENSE matching the manifest, and CHANGELOG (coolms/.github's basic-files.yml), pinned to a commit.
+  basic-files:
+    uses: coolms/.github/.github/workflows/basic-files.yml@595d36957a135e7d753abe34ca1ce90a0a6f2215

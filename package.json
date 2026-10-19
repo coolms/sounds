@@ -1,0 +1,18 @@
+{
+  "name": "@coolms/sounds",
+  "version": "0.1.0",
+  "description": "The CoolMS sounds: one original sound per kind of arrival, encoded for the web, Android and iOS from one source",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coolms/sounds.git"
+  },
+  "files": [
+    "dist",
+    "sounds.json",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ]
+}
